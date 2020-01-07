@@ -72,7 +72,7 @@ public class LoginPage extends BasePage {
      * @return the login message
      */
     public String getMessage() {
-        return driver.findElementById("Alt Message").getText();
+        return driver.findElementByAccessibilityId("Alt Message").getText();
     }
 
     /**
@@ -88,6 +88,6 @@ public class LoginPage extends BasePage {
      * Presses the logout/try again button
      */
     public void pressAltButton() {
-        driver.findElementById("Alt Button").click();
+        driver.findElementByAccessibilityId("Alt Button").click();
     }
 }

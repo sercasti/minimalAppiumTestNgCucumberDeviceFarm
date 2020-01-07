@@ -82,11 +82,11 @@ public abstract class TestBase extends AbstractTestNGCucumberTests {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         //Set the DesiredCapabilities capabilities only for local development
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "Android Emulator");
-        capabilities.setCapability("appPackage", "com.amazonaws.devicefarm.android.referenceapp");
-        capabilities.setCapability("appActivity", "com.amazonaws.devicefarm.android.referenceapp.Activities.MainActivity");
-        capabilities.setCapability("udid", "emulator-5554");
+        //capabilities.setCapability("platformName", "Android");
+        //capabilities.setCapability("deviceName", "Android Emulator");
+        //capabilities.setCapability("appPackage", "com.amazonaws.devicefarm.android.referenceapp");
+        //capabilities.setCapability("appActivity", "com.amazonaws.devicefarm.android.referenceapp.Activities.MainActivity");
+        //capabilities.setCapability("udid", "emulator-5554");
 
         driver = new AndroidDriver<MobileElement>(url, capabilities);
 
