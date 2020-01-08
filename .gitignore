@@ -1,1 +1,7 @@
 /target/
+.DS_Store
+.classpath
+.github
+.project
+.settings/
+.settings
