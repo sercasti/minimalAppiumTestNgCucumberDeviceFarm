@@ -4,4 +4,4 @@
 .github
 .project
 .settings/
-/bin/
+bin/
