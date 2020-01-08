@@ -18,21 +18,15 @@ package Tests;
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 
 import Pages.LoginPage;
 import Tests.AbstractBaseTests.TestBase;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 /**
  * Tests for a login page
  */
-
-
 @CucumberOptions(
         strict = true,
         monochrome = true,
@@ -46,7 +40,6 @@ public class LoginTest extends TestBase {
     private static final String CORRECT_PASSWORD = "password";
     private static final String FAIL_USER_NAME = "Wrong User";
     private static final String FAIL_PASSWORD = "12345";
-    private static final String BAD_TEXT_ENTRY_MSG = "Username sent to text field incorrectly";
 
     private LoginPage loginPage;
 
